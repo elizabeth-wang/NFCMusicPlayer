@@ -15,7 +15,7 @@
 #include "SoftwareSerial.h"
 #include "tagDecoder.h"
 
-SoftwareSerial DF1201SSerial(2, 3);  /* RX  TX */
+SoftwareSerial DF1201SSerial(7, 8);  /* RX  TX */
 DFRobot_DF1201S DF1201S;
 int prevScan, curScan, lastPlayed;
 

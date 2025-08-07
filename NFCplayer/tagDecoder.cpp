@@ -58,22 +58,23 @@ int tagDecoderLoop() {
     content.concat(String(mfrc522.uid.uidByte[i], HEX));
   }
   content.toUpperCase();
-  if (content == " 04 6B E5 C3 79 00 00") {
+  content.trim();
+  if (content == "04 CD E4 C3 79 00 00") {
     return 1;
     delay(500);
-  } else if (content == " 04 6D E5 C3 79 00 00") {
+  } else if (content == "04 67 E5 C3 79 00 00") {
     return 2;
     delay(500);
-  } else if (content == " 04 6C E5 C3 79 00 00") {
+  } else if (content == "04 CB E4 C3 79 00 00") {
     return 3;
     delay(500);
-  } else if (content == " 04 6A E5 C3 79 00 00") {
+  } else if (content == "04 2E E5 C3 79 00 00") {
     return 4;
     delay(500);
-  } else if (content == " 04 B6 E5 C3 79 00 00") {
+  } else if (content == "04 C9 E4 C3 79 00 00") {
     return 5;
     delay(500);
-  } else if (content == " 04 66 E5 C3 79 00 00") {
+  } else if (content == "04 73 E5 C3 79 00 00") {
     return 6;
     delay(500);
   } else {
